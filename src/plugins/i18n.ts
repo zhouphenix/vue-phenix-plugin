@@ -10,9 +10,6 @@ interface I18nObj {
     getLocale: () => string
 }
 
-/**
- * 限制{Object}
- */
 interface Messages {
     [key: string]: any
 }

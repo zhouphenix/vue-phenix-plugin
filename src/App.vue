@@ -18,7 +18,7 @@ export default defineComponent({
     // console.log('i18n::', props, context)
     const imgRef = ref(null)
     const i18n = useI18n()
-    const supportLanguages = Object.keys(i18n?.messages)
+    const supportLanguages = Object.keys(i18n?.messages || {})
     onMounted(()=> {
       // 在挂载后执行某些代码
       console.log('imgRef::', imgRef.value)
