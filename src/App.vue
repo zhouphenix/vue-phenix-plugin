@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent, ref, onMounted, inject} from 'vue'
+import {defineComponent, ref, onMounted} from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import {useI18n} from "./plugins/i18n";
 
@@ -14,7 +14,7 @@ export default defineComponent({
   components: {
     HelloWorld
   },
-  setup(props, context) {
+  setup() {
     // console.log('i18n::', props, context)
     const imgRef = ref(null)
     const i18n = useI18n()
